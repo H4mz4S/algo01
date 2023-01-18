@@ -1,0 +1,35 @@
+ALGORITHM SENTENCE
+
+VAR
+nb1,nb2,nb3 :=INTEGER;
+sentc := STRING[];
+
+BEGIN
+
+nb1 := 0;
+nb2 := 0;
+nb3 := 0;
+
+write("this is a sentence.")
+
+Read(sentc)
+
+REPEAT
+IF(sentc[nb3]="") THEN
+nb2:= nb2+1;
+END_IF
+
+IF (sentc[nbc] in ["a","e","u","i","o","y"]) THEN
+nbv := nbv+1;
+
+END_IF
+
+nb3 := nb3+1;
+
+UNTIL (sentc[nb3]=".")
+
+write ("The number of characters is",nb3+1)
+write ("The number of word is",nb2+1)
+write ("The number of vowels is",nb1)
+
+END
